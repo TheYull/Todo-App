@@ -49,7 +49,10 @@ const deleteTask = (buttonEl) => {
     (item) => item.id === buttonEl.parentElement.id
   );
   buttonEl.parentElement.remove();
+  taskData.splice(dataArrIndex, 1);
 };
+
+const editTask = (buttonEl) => {};
 
 const reset = () => {
   titleInput.value = "";
